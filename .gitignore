@@ -1,0 +1,28 @@
+# Local configuration and credentials
+.env
+.env.*
+.oci/
+secrets/
+wallet/
+wallets/
+Wallet_*.zip
+*.pem
+*.key
+*.p12
+*.sso
+
+# Local script variants containing environment values
+*.local.sql
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files and execution logs
+*.log
+*.tmp
+*.bak
+*~
