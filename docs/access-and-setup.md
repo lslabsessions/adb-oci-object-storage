@@ -2,11 +2,11 @@
 
 ## Database and cloud permissions
 
-The lab used `ADMIN` for administrative setup and `APP_DEV` for the application objects and file tests. Three separate configurations are involved:
+The lab used `ADMIN` for administrative setup and `APP_DEV` schema for the application objects and file tests. Three separate configurations are involved:
 
 | Layer | Purpose |
 | --- | --- |
-| Database grants | Allow `APP_DEV` to use the directory, credentials and required packages/types |
+| Database grants | Allow `APP_DEV` schema to use the directory, credentials and required packages/types |
 | OCI IAM | Allow the database resource or OCI user to perform operations on the bucket |
 | ORDS privileges and roles | Allow the supplier OAuth client to invoke the application endpoints |
 
