@@ -69,6 +69,8 @@ Directories also appear in other Oracle features:
 | Local data loading | `DBMS_CLOUD` can load or query supported files from a directory |
 | Customer-managed wallets | A wallet file can be copied from a bucket to a directory for an API that requires it |
 
+I used this approach in the SQL Server gateway lab. A trust wallet was copied from a private OCI Object Storage bucket into GATEWAY_WALLET_DIR in Autonomous Database. The database link used that local wallet for the TCPS connection to the Oracle Database Gateway running on AWS EC2.
+
 These are additional use cases, not additional tests performed by this project. A wallet is a file or collection of files containing security material; it is not itself a storage location. Its directory is the location used by the relevant API. Wallet requirements depend on the connection and service configuration.
 
 The supplier demonstration does not need a local directory because it exchanges the file through Object Storage URLs.
