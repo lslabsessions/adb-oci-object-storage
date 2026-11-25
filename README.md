@@ -1,4 +1,4 @@
-OCI Object Storage and DIRECTORY files in Oracle Autonomous Database
+# OCI Object Storage and DIRECTORY files in Oracle Autonomous Database
 
 This project explores how files can be stored and accessed from Oracle Autonomous Database, using a private OCI Object Storage bucket and a database `DIRECTORY`.
 
