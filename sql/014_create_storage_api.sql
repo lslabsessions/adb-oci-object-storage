@@ -66,7 +66,7 @@ CREATE OR REPLACE PACKAGE BODY storage_api AS
         l_details DBMS_CLOUD_OCI_OBJECT_STORAGE_CREATE_PREAUTHENTICATED_REQUEST_DETAILS_T;
         l_response DBMS_CLOUD_OCI_OBS_OBJECT_STORAGE_CREATE_PREAUTHENTICATED_REQUEST_RESPONSE_T;
     BEGIN
-        IF c_namespace = '<namespace>' THEN
+        IF c_namespace = '<BUCKET_NAMESPACE>' THEN
             RAISE_APPLICATION_ERROR(-20005, 'Set c_namespace and recompile the package.');
         END IF;
 
